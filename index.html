@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" />
+</head>
+
+<body>
+
+    <div id="header">
+        <div class="container">
+            <nav>
+                <!-- <img src="images/logo.png" class="logo"> -->
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <!-- <p>UI/UX Designer</p> -->
+                 <p>Web Developer</p>
+                <h1>Hi, I'm <span> Pooja</span> <br>Kumari From India</h1>
+            </div>
+        </div>
+    </div>
+
+    <!-- ----------About-------- -->
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <!-- <img src="images/user.png"> -->
+                     <img src="images/photo.jpg" alt="">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Hello! I'm Pooja, a passionate web developer with a keen eye for detail and a love for
+                        crafting beautiful, functional websites. With 2 - years of experience in the industry, I
+                        specialize in front-end development, back-end
+                        integration, responsive design. </p><br>
+
+                    <p> Over the years, I’ve had the opportunity to work on a variety of projects, from
+                        e-commerce platforms, personal blogs, corporate websites . My focus is always on creating
+                        user-friendly, accessible, and performant websites
+                        that not only meet the client's needs but also exceed their expectations.</p> <br>
+
+                    <p>I’m proficient in HTML, CSS, JavaScript, React, Node.js, MongoDb,Express,
+                        and I’m always eager to learn new tools and techniques to stay on the cutting edge of web
+                        development.</p><br>
+
+                    <p>When I’m not coding, you can find me exploring the outdoors, experimenting with new recipes, or
+                        diving into a good book].</p><br>
+
+                    <p>Feel free to explore my portfolio and reach out if you’d like to discuss a project, collaborate,
+                        or just say hello!</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>UI/UX</span><br>Designing Web/App interfaces</li>
+                            <li><span>Web Development</span><br>Web app Development</li>
+                            <li><span>App Development</span><br>Building Android/ios apps</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2021 - Current</span><br>UI/UX Design Training at ET Institute</li>
+                            <li><span>2019 - 2021</span><br>Team Lead at StartApp LLC.</li>
+                            <li><span>2017 - 2019</span><br>UI/UX Design Executive at Coin Digital Ltd.</li>
+                            <li><span>2016 - 2017</span><br>Internship at ekart eCommerce.</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2023</span><br>UI/UX Design Training at ET Institute</li>
+                            <li><span>2026</span><br>MCA from AMITY Jharkhand.</li>
+                            <li><span>2024</span><br>BCA from VBU Hazaribagh.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- --------Services------- -->
+
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="far fa-code"></i>
+                    <h2>Web Design</h2>
+                    <!-- <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni ratione quaerat rerum quia
+                        obcaecati voluptatem minus, repellendus aspernatur, saepe dolor, impedit ea beatae? Distinctio.
+                    </p> -->
+                    <p>"My approach involves an iterative design process, beginning with wireframes and user flows,
+                         followed by front-end development and back-end integration. I prioritize clean, modular code and
+                          focus on ensuring the final product is responsive and accessible."
+
+                    </p>
+                    <a href="#"> Learn more</a>
+                </div>
+                <div>
+                    <i class="fas fa-crop"></i>
+                    <h2>UI/UX Design</h2>
+                    <!-- <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni ratione quaerat rerum quia -->
+                        <!-- obcaecati voluptatem minus, repellendus aspernatur, saepe dolor, impedit ea beatae? Distinctio. -->
+                    <!-- </p> -->
+                     <p>"I’m a UI/UX designer passionate about creating intuitive, user-centered designs that are both functional 
+                        and visually compelling. I believe that great design is about simplifying complexity and solving real user 
+                        problems. My goal is to create experiences that feel seamless and engaging, whether on mobile, web, or 
+                        any other platform."
+
+                     </p>
+                    
+                    <a href="#"> Learn more</a>
+                </div>
+                <div>
+                    <i class="fab fa-app-store"></i>
+                    <h2>App Design</h2>
+                    <!-- <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni ratione quaerat rerum quia
+                        obcaecati voluptatem minus, repellendus aspernatur, saepe dolor, impedit ea beatae? Distinctio.
+                    </p> -->
+                    <p>"I am passionate about creating mobile app designs that not only look stunning but also deliver
+                         exceptional user experiences. I focus on user-centric design, making sure each app I design is
+                          intuitive, easy to navigate, and visually engaging. My goal is to create apps that seamlessly 
+                          integrate into users’ daily lives while solving their problems."
+
+                    </p>
+                    <a href="#"> Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- ----------potfolio--------- -->
+
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/work-1.png">
+                    <div class="layer">
+                        <h3>Social Media App</h3>
+                        <p>The app connects you to the talented people around the world. Download it from play store.
+                        </p>
+                        <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-2.png">
+                    <div class="layer">
+                        <h3>Music App</h3>
+                        <p>The app connects you to the talented people around the world. Download it from play store.
+                        </p>
+                        <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-3.png">
+                    <div class="layer">
+                        <h3>Online Shopping App</h3>
+                        <p>The app connects you to the talented people around the world. Download it from play store.
+                        </p>
+                        <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See More</a>
+        </div>
+    </div>
+
+    <!-- -------------contact------------- -->
+
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fas fa-paper-plane"></i>contact@example.com</p>
+                    <p><i class="fas fa-phone-square-alt"></i>0123456789</p>
+                    <div class="social-icons">
+                        <a href="https://facebook.com/"><i class="fab fa-facebook-square"></i></a>
+                        <a href=""><i class="fab fa-twitter-square"></i></a>
+                        <a href=""><i class="fab fa-instagram"></i></a>
+                        <a href=""><i class="fab fa-linkedin"></i></a>
+                    </div>
+                    <a href="images/my-cv.pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2"> Submit</button>
+                    </form>
+
+                    <span id="msg"></span>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="copy-right">
+        <p>Copyright &copy Pooja. Made with <i class="fas fa-heart"></i> by Easy Tutorials</p>
+    </div>
+    </div>
+
+
+
+    <script>
+
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+
+    </script>
+
+    <script>
+
+        var sidemenu = document.getElementById("sidemenu");
+
+        function openmenu() {
+            sidemenu.style.right = "0";
+        }
+
+        function closemenu() {
+            sidemenu.style.right = "-200px";
+        }
+
+    </script>
+
+    <script>
+        const scriptURL = '<https://script.google.com/macros/s/AKfycbzqLRRfNGOA8mtL0ITu6dkLLCjuX3s-L1ua-j7FS2NE3iAZY5F_aSCvnvk_SOI6kd7QwQ/exec>'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                .then(response => {
+                    msg.innerHTML = "Message Sent Successfully"
+                    setTimeout(function () {
+                        msg.innerHTML = ""
+                    }, 5000)
+                    form.reset()
+                })
+                .catch(error => console.error('Error!', error.message))
+        })
+    </script>
+
+</body>
+
+</html>
